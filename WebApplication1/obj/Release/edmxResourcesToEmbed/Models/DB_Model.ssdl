@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_TTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tb_master">
+    <Key>
+      <PropertyRef Name="MT_HN" />
+    </Key>
+    <Property Name="MT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MT_HN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MT_Fname" Type="varchar" MaxLength="50" />
+    <Property Name="MT_Lname" Type="varchar" MaxLength="50" />
+    <Property Name="MT_Phone" Type="varchar" MaxLength="50" />
+    <Property Name="MT_Email" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="DB_TTModelStoreContainer">
+    <EntitySet Name="tb_master" EntityType="Self.tb_master" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_TTModelStoreContainer" CdmEntityContainer="DB_Model">
+    <EntitySetMapping Name="tb_master">
+      <EntityTypeMapping TypeName="DB_TTModel.tb_master">
+        <MappingFragment StoreEntitySet="tb_master">
+          <ScalarProperty Name="MT_ID" ColumnName="MT_ID" />
+          <ScalarProperty Name="MT_HN" ColumnName="MT_HN" />
+          <ScalarProperty Name="MT_Fname" ColumnName="MT_Fname" />
+          <ScalarProperty Name="MT_Lname" ColumnName="MT_Lname" />
+          <ScalarProperty Name="MT_Phone" ColumnName="MT_Phone" />
+          <ScalarProperty Name="MT_Email" ColumnName="MT_Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
